@@ -29,12 +29,20 @@ kramdown:
   input: GFM
   parse_block_html: true
 include: ["_pages"]
-gems:
-  - jekyll-redirect-from
 plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-redirect-from
+- jekyll-seo-tag
+- jekyll-sitemap
+- jekyll-redirect-from
 exclude:
-  - Gemfile
-  - Gemfile.lock
+- Gemfile
+- Gemfile.lock
+collections:
+  tutorials:
+    output: true
+defaults:
+- scope:
+    path: ""
+    type: tutorials
+  values:
+    layout: tutorial
+

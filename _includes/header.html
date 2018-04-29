@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta property="og:url" content="{{ site.host-full | append: page.url }}" />
+    <meta property="og:type" content="website" />
+    {% if page.title %}
+      <meta property="og:title" content="{{ page.title | append: ' | ' | append: site.title }}" />
+    {% else %}
+      <meta property="og:title" content="{{ site.title | default 'A Jekyll site' }}" />
+    {% endif %}
+    {% if page.description %}
+      <meta property="og:description" content="{{ page.description }}" />
+      <meta name="twitter:description" content="{{ page.description }}" />
+    {% else %}
+      <meta property="og:description" content="{{ site.description }}" />
+      <meta name="twitter:description" content="{{ site.description }}" />
+    {% endif %}
+    <!-- <meta property="og:image" content="https://i.imgur.com/tdyKLfy.jpg" /> -->
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:height" content="285" />
+    <meta property="og:image:width" content="535" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- <meta name="twitter:site" content="@maptxt" /> -->
+    <meta name="twitter:creator" content="@muziejus" />
+    <meta name="twitter:title" content="{{ page.title }}" />
+    <!-- <meta name="twitter:image" content="https://i.imgur.com/tdyKLfy.jpg" /> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    {% if page.title %}
+      <title>{{ page.title | append: ' | ' | append: site.title }}</title>
+    {% else %}
+      <title>{{ site.title | default 'A Jekyll site' }}</title>
+    {% endif %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  </head>

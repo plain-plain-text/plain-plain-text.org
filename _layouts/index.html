@@ -1,15 +1,20 @@
 {% include header.html %}
-<body>
-{% include navbar.html %}
-  <div id="main" class="wrapper container">
-    <div class="row">
-      <article id="content" class="col-md-8">
-      {{ content }}
-      </article>
-      <aside class="col-md-4">
-      </aside>
+<body class="h-100">
+  <main role="main" id="main" class="h-100">
+    <div class="d-flex align-items-center h-100">
+        <div class="mx-auto w-50 justify-content-center jumbotron">
+          <h1 class="display-3">{{ page.title }}</h1>
+          <p>{{ page.paragraph | markdownify }}</p>
+          {% include footer.html %}
+          <p>I want to:</p>
+          {% for tutorial in site.tutorials %}
+            <a href="{{ site.baseurl }}/tutorials/{{ tutorial.slug }}" class="btn btn-primary" role="button">{{ tutorial.title }}</a>&nbsp;
+            {% endfor %}
+        </div>
     </div>
-  </div>
-  {% include footer.html %}
+  </main>
   {% include scripts.html %}
+  <script>
+    $("html").css("height", "100%");
+  </script>
 </body>

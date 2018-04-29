@@ -1,5 +1,5 @@
 ---
-title: Plain Plain Text
+title: Plain Plain Text.
 layout: index
 paragraph: >-
   Plain Plain Text is a tutorials site for humanists want to get comfortable

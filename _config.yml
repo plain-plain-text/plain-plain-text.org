@@ -17,8 +17,7 @@ title: Plain Plain Text
 email: inbox@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Modular tutorials for humanists to learn to use plain text.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://plain-plain-text.org" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  jekyll
 

@@ -3,6 +3,11 @@ $(document).ready(function() {
   let externalLink = $.parseHTML("<span>&nbsp;<i style='vertical-align: baseline; font-size: 60%;' class='fa fa-small fa-external-link-alt'></i></span>");
   $("a[href^='http']:not(a:has(img))").append(externalLink);
   $("a[href^='http']").attr("target", "_blank");
+  
+// Bump down content
+if($(".fixed-top").length){
+  $("#main").css("margin-top",  $("#navbar").height() + $(".fixed-top").data("margin") + "px");
+}
 
   // flesh out table of contents.
   $("#tocList").append(function(){

@@ -5,9 +5,9 @@
         <div class="mx-auto w-75 justify-content-center jumbotron">
           <h1 class="display-3">{{ page.title }}</h1>
           <p>{{ page.paragraph | markdownify }}</p>
-          <p>I want to:</p>
+          <p>I want to create:</p>
           {% for tutorial in site.tutorials %}
-            <a href="{{ site.baseurl }}/tutorials/{{ tutorial.slug }}" class="btn btn-primary" role="button">{{ tutorial.title }}</a>&nbsp;
+            <a href="{{ site.baseurl }}{{ tutorial.url }}" class="btn btn-primary" role="button">{{ tutorial.create-button }}</a>&nbsp;
             {% endfor %}
           {% include footer.html %}
         </div>

@@ -1,0 +1,10 @@
+{% if page.whatis %}
+<h3>What Is?</h3>
+<ul>
+{% assign whatises = page.whatis | split: " " %}
+{% for whatis in whatises %}
+<li><a href="{{ site.baseurl }}{{ whatis.url }}">{{ whatis }}</a></li>
+{% endfor %}
+</ul>
+{% endif %}
+

@@ -12,6 +12,8 @@ benefits.
 
 Before installing Git, you should
 
+
+{:module="create/github-account"}
 #### Create a GitHub Account
 
 <div class="pc">

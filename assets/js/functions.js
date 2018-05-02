@@ -1,5 +1,11 @@
+function addTheGoodies(target){
+  [{tag: "p", f: addWhatIses}, {tag: "h4", f: addModules}].forEach((i) => {
+    $(target).find(i.tag).each(i.f);
+  });
+}
+
 function addWhatIses(){
-  const token = Math.floor(Math.random() * 10000000000000).toString();
+  const token = generateToken();
   $( this ).append("<div id='whatIs-box-" + token + "'></div>");
   const whatIses = $( this ).children("a").map(function(){
     if($( this ).attr("href").match(/^\/whatis\//)){
@@ -15,7 +21,7 @@ function addWhatIses(){
   whatIses.forEach((i) => {
     const target = "whatIs-doc-" + i.href.replace(/^\/whatis\//, "") + "-" + token;
     $("#" + target).on("show.bs.collapse", () => {
-      getPage(i.href, target);
+      getPage(i.href, "#" + target);
     });
   });
 }
@@ -36,9 +42,27 @@ function formatWhatIs(whatIses, token){
 }
 
 function getPage(url, target){
-  if($("#" + target).html().length === 0){
+  // target has to be a full selector.
+  if($(target).html().length === 0){
     $.get(url, (d) => {
-      $("#" + target).html("<div class='mb-2 card card-body'>" + d + "</div>");
+      $(target).html("<div class='mb-2 card card-body'>" + d + "</div>");
+      addTheGoodies(target);
     });
   }
+}
+
+function addModules(){
+  // $(this).replaceWith($('<h5>' + this.innerHTML + '</h5>'));
+  const module = $( this ).attr("module");
+  const token = generateToken();
+  const target = "details-" + token;
+  let details = "<details ontoggle='getPage(\"/modules/" + module + "\", \"#" + target + "\");'>"
+  details = details + "<summary>" + $( this ).html() + "</summary>";
+  details = details + "<div id='" + target + "'></div></details>";
+  $(this).replaceWith($(details));
+  // console.log($( this ).html());
+}
+
+function generateToken(){
+  return Math.floor(Math.random() * 10000000000000).toString();
 }

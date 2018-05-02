@@ -11,4 +11,5 @@ go in the `_posts` folder, and their filename is something like
 `yyyy-mm-dd-useful-title-separated-by-hyphens.md`. That is, they begin with
 the date (year first, then month, then day), and end with `.md`.
 
+{:module="create/new-file-in-github-repository"}
 #### Create a New File in a GitHub Repository

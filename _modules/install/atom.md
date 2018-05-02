@@ -65,6 +65,7 @@ Atom is a text editor provided by the people at [GitHub](/whatis/github). It is 
 
 Atom is now installed and autosave is enabled. Congrats. The next step is to
 
+{:module="install/git"}
 #### Install Git
 
 </div>

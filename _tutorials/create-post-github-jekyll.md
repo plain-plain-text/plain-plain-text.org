@@ -17,12 +17,16 @@ As such, we will be using a [Atom](/whatis/atom) to draft the post in
 [Markdown](/whatis/markdown) in our [repository](/whatis/repository), after
 which we will push it to GitHub, thereby publishing it.
 
+{:module="create/blank-post-in-github-repository"}
 #### Create a Blank Post in a GitHub Repository
 
+{:module="add/content-to-jekyll-post"}
 #### Add Content to a Jekyll Post
 
+{:module="save/stage-commit-change"}
 #### Save, Stage, and Commit the Post
 
+{:module="push/to-github"}
 #### Push the Post to GitHub
 
 

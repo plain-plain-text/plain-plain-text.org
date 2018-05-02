@@ -22,12 +22,7 @@ if($(".fixed-top").length){
   });
 }); 
 
-// Add the whatis and tutorials.
 $(document).ready(() => {
+// Add the whatis and tutorials.
   addTheGoodies("article");
 });
-
-// Add the modules.
-// $(document).ready(() => {
-//   $("article > h4").each(addModules);
-// });

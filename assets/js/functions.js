@@ -1,4 +1,5 @@
 function addTheGoodies(target){
+  addTheMacWinTogglers(target);
   [{tag: "p", f: addWhatIses}, {tag: "h4", f: addModules}].forEach((i) => {
     $(target).find(i.tag).each(i.f);
   });
@@ -41,16 +42,6 @@ function formatWhatIs(whatIses, token){
   return pbox + docbox + "</div>";
 }
 
-function getPage(url, target){
-  // target has to be a full selector.
-  if($(target).html().length === 0){
-    $.get(url, (d) => {
-      $(target).html("<div class='mb-2 card card-body'>" + d + "</div>");
-      addTheGoodies(target);
-    });
-  }
-}
-
 function addModules(){
   // $(this).replaceWith($('<h5>' + this.innerHTML + '</h5>'));
   const module = $( this ).attr("module");
@@ -61,6 +52,83 @@ function addModules(){
   details = details + "<div class='pt-2' id='" + target + "'></div></details>";
   $(this).replaceWith($(details));
   // console.log($( this ).html());
+}
+
+function addTheMacWinTogglers(target){
+  $(target).find(".pc").each(function(){
+    let toggler = "<span class='computer-toggler'>";
+    toggler = toggler + "<i class='apple-toggler fab fa-apple'></i> | <i class='win-toggler text-muted fab fa-windows'></i></span>&nbsp;";
+    $( this ).html(function(_, old){
+      return toggler + old
+    });
+    const currOS = $("#master-os").data("os");
+    if(currOS === "apple"){
+      $( this ).find(".win").addClass("d-none");
+      $( this ).find(".mac").each(makeVisible);
+      $( this ).find(".win-toggler").addClass("text-muted");
+      $( this ).find(".apple-toggler").removeClass("text-muted");
+    } else {
+      $( this ).find(".mac").addClass("d-none");
+      $( this ).find(".win").each(makeVisible);
+      $( this ).find(".apple-toggler").addClass("text-muted");
+      $( this ).find(".win-toggler").removeClass("text-muted");
+    }
+    $( this ).find(".computer-toggler").on("click", toggleOS);
+  });
+}
+
+function toggleOS(){
+  console.log("toggler clicked");
+  if($("#master-os").data("os") === "apple"){
+    // switch to windows.
+    $(".mac").each(makeInvisible);
+    $(".win").each(makeVisible);
+    $(".apple-toggler").addClass("text-muted");
+    $(".win-toggler").removeClass("text-muted");
+    $("#master-os").data("os", "windows");
+  } else {
+    // Mac reigns.
+    $(".win").each(makeInvisible);
+    $(".mac").each(makeVisible);
+    $(".win-toggler").addClass("text-muted");
+    $(".apple-toggler").removeClass("text-muted");
+    $("#master-os").data("os", "apple");
+  }
+}
+
+function makeInvisible(){
+  $( this ).attr("class").split(/\s+/).forEach((i) => {
+    if( i.match(/^d-/) ){
+      console.log("has class ", i);
+      $( this ).removeClass(i);
+    }
+  });
+  $( this ).addClass("d-none");
+}
+
+function makeVisible(){
+  const tag = $( this ).prop("tagName");
+  console.log(tag);
+  switch(tag) {
+    case "KBD":
+      $( this ).removeClass("d-none").addClass("d-inline");
+      break;
+    case "DIV":
+      $( this ).removeClass("d-none").addClass("d-block");
+      break;
+    default:
+      $( this ).removeClass("d-none").addClass("d-block");
+  }
+}
+
+function getPage(url, target){
+  // target has to be a full selector.
+  if($(target).html().length === 0){
+    $.get(url, (d) => {
+      $(target).html("<div class='mb-2 card card-body'>" + d + "</div>");
+      addTheGoodies(target);
+    });
+  }
 }
 
 function generateToken(){

@@ -6,8 +6,6 @@ version:
 - win: 1.26.1
 ---
 
-Atom is a text editor provided by the people at [GitHub](/whatis/github). It is both straightforward and also very powerful, allowing the user to set their level of control.
-
 <div class="pc">
 <div class="win">
 
@@ -34,10 +32,11 @@ Atom is a text editor provided by the people at [GitHub](/whatis/github). It is 
 
 </div>
 
-1. Immediately you see two panes beside one another. One pane has three tabs,
-   “untitled,” “Telemetry Consent,” and “Welcome.” The other pane features the
-   Welcome Guide. Panes hold tabs, and you can have many tabs as well as many
-   panes, and panes can even be stacked vertically, not just horizontally.
+Now that Atom is installed, you should immediately you see two panes beside
+one another. One pane has three tabs, “untitled,” “Telemetry Consent,” and
+“Welcome.” The other pane features the Welcome Guide. Panes hold tabs, and you
+can have many tabs as well as many panes, and panes can even be stacked
+vertically, not just horizontally.
 
 1. Uncheck the “Show Welcome Guide when opening Atom”
 

@@ -10,7 +10,15 @@ function addWhatIses(){
   $( this ).append("<div id='whatIs-box-" + token + "'></div>");
   const whatIses = $( this ).children("a").map(function(){
     if($( this ).attr("href").match(/^\/whatis\//)){
-      return { href: $( this ).attr("href"),
+      const href = $( this ).attr("href");
+      const target = "#whatIs-doc-" + href.replace(/^\/whatis\//, "") + "-" + token;
+      $( this ).attr("href", "#")
+        .attr("data-toggle", "collapse")
+        .attr("data-target", target)
+        .attr("role", "button")
+        .attr("aria-expanded", "false")
+        .attr("aria-controls", target)
+      return { href: href,
         text: $( this ).html()
       };
     }
@@ -118,12 +126,12 @@ function makeVisible(){
 
 function getPage(url, target){
   // target has to be a full selector.
-  if($(target).html().length === 0){
+  // if($(target).html().length === 0){
     $.get(url, (d) => {
       $(target).html("<div class='mb-2 card card-body'>" + d + "</div>");
       addTheGoodies(target);
     });
-  }
+  // }
 }
 
 function generateToken(){

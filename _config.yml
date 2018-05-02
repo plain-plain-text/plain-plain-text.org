@@ -38,10 +38,24 @@ exclude:
 collections:
   tutorials:
     output: true
+  modules:
+    output: true
+  whatis:
+    output: true
 defaults:
 - scope:
     path: ""
     type: tutorials
   values:
     layout: tutorial
+- scope:
+    path: ""
+    type: modules
+  values:
+    layout: module
+- scope:
+    path: ""
+    type: whatis
+  values:
+    layout: whatis
 

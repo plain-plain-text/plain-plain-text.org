@@ -22,3 +22,7 @@ if($(".fixed-top").length){
   });
 }); 
 
+// Add the whatis.
+$(document).ready(() => {
+  $("article > p").each(addWhatIses);
+});

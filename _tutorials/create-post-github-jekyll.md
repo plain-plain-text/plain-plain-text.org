@@ -6,10 +6,6 @@ tags: blogging jekyll github markdown
 whatis: github jeykll markdown atom
 ---
 
-{:.pc}
-This is a paragraph for testing the togglers. <kbd>Mac keys</kbd>{:.mac}
-<kbd>Win keys</kbd>{:.win} and so on.
-
 The first Plain Plain Text tutorial is, appropriately enough, a tutorial that
 teaches the learner how to add to Plain Plain Text itself. This is because
 Plain Plain Text is a [Jekyll](/whatis/jekyll) website hosted by

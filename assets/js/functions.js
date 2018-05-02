@@ -43,7 +43,6 @@ function formatWhatIs(whatIses, token){
 }
 
 function addModules(){
-  // $(this).replaceWith($('<h5>' + this.innerHTML + '</h5>'));
   const module = $( this ).attr("module");
   const token = generateToken();
   const target = "details-" + token;
@@ -51,7 +50,6 @@ function addModules(){
   details = details + "<summary>" + $( this ).html() + "</summary>";
   details = details + "<div class='pt-2' id='" + target + "'></div></details>";
   $(this).replaceWith($(details));
-  // console.log($( this ).html());
 }
 
 function addTheMacWinTogglers(target){
@@ -78,7 +76,6 @@ function addTheMacWinTogglers(target){
 }
 
 function toggleOS(){
-  console.log("toggler clicked");
   if($("#master-os").data("os") === "apple"){
     // switch to windows.
     $(".mac").each(makeInvisible);
@@ -99,7 +96,6 @@ function toggleOS(){
 function makeInvisible(){
   $( this ).attr("class").split(/\s+/).forEach((i) => {
     if( i.match(/^d-/) ){
-      console.log("has class ", i);
       $( this ).removeClass(i);
     }
   });
@@ -108,7 +104,6 @@ function makeInvisible(){
 
 function makeVisible(){
   const tag = $( this ).prop("tagName");
-  console.log(tag);
   switch(tag) {
     case "KBD":
       $( this ).removeClass("d-none").addClass("d-inline");

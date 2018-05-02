@@ -14,10 +14,10 @@ here and then abstract them to the slightly more complex way that Plain Plain
 Text works.
 
 As such, we will be using a [Atom](/whatis/atom) to draft the post in
-[Markdown](/whatis/markdown), after which we will use [Git](/whatis/git) to
-[push](/whatis/pushing) it to GitHub.
+[Markdown](/whatis/markdown) in our [repository](/whatis/repository), after
+which we will push it to GitHub, thereby publishing it.
 
-#### Create a Blank Post in your GitHub Repository
+#### Create a Blank Post in a GitHub Repository
 
 #### Add Content to a Jekyll Post
 

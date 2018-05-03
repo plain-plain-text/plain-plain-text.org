@@ -14,7 +14,7 @@ here and then abstract them to the slightly more complex way that Plain Plain
 Text works.
 
 As such, we will be using a [Atom](/whatis/atom) to draft the post in
-Markdown in our repository, after
+[Markdown](/whatis/markdown) in our [repository](/whatis/repository), after
 which we will push it to GitHub, thereby publishing it.
 
 {:module="create/blank-post-in-github-repository"}

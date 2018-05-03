@@ -6,4 +6,5 @@ author: muziejus
 {:.pc}
 The Command Palette is a small box in Atom that lets you search for command
 names and then execute the commands. Launch it by typing
-<kbd>cmd-shift-p</kbd>{:.mac} <kbd>ctrl-shift-p</kbd>{:.win}.
+<kbd><kbd>cmd</kbd> <kbd>shift</kbd> <kbd>p</kbd></kbd>{:.mac}
+<kbd><kbd>ctrl</kbd> <kbd>shift</kbd> <kbd>p</kbd></kbd>{:.win}.

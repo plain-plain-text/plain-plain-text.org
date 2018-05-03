@@ -6,10 +6,15 @@ author: muziejus
 Because every post in Jekyll is its own, solitary Markdown file, creating a
 new one is the same as creating a blank document in a GitHub repository.
 
-The vital things to keep in mind with a Jekyll post is that, typically, they
-go in the `_posts` folder, and their filename is something like
-`yyyy-mm-dd-useful-title-separated-by-hyphens.md`. That is, they begin with
-the date (year first, then month, then day), and end with `.md`.
-
 {:module="create/new-file-in-github-repository"}
 #### Create a New File in a GitHub Repository
+
+Jekyll posts sit in the `_posts` folder, typically, so when you create your
+new blank file, you should place it there.
+
+Similarly, the filename for posts is typically something like
+`yyyy-mm-dd-useful-title-separated-by-hyphens.md`. That is, it begins with
+the date (year first, then month, then day), and ends with `.md`.
+
+The date signals the posting date for the post, and the `.md` signals that you
+are writing a [Markdown](/whatis/markdown) post.

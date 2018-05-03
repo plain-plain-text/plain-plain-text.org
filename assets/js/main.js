@@ -25,4 +25,5 @@ if($(".fixed-top").length){
 $(document).ready(() => {
 // Add the whatis and tutorials.
   addTheGoodies("article");
+  $("#master-os").on("click", toggleOS);
 });

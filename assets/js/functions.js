@@ -113,6 +113,12 @@ function makeInvisible(){
 function makeVisible(){
   const tag = $( this ).prop("tagName");
   switch(tag) {
+    case "SPAN":
+      $( this ).removeClass("d-none").addClass("d-inline");
+      break;
+    case "CODE":
+      $( this ).removeClass("d-none").addClass("d-inline");
+      break;
     case "KBD":
       $( this ).removeClass("d-none").addClass("d-inline");
       break;

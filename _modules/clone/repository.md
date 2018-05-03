@@ -33,9 +33,7 @@ from GitHub, the process is straight forward:
    Paste the url above into “Clone from.” Note, however, where it plans on
    saving your repository. The default value is a `github` folder in
    your [home directory](/whatis/home-directory), that is,
-   `/Users/yourusername/github`{:.mac}
-   `C:\Users\yourusername\github`{:.win}{:.mac}
-   `C:\Users\yourusername\github`{:.win}.
+   `/Users/yourusername/github`{:.mac} `C:\Users\yourusername\github`{:.win}.
 
 1. When you press “Clone,” Atom will download the repository and open in in a
    new pane, the [Tree View](/whatis/tree-view), all the way on the left of

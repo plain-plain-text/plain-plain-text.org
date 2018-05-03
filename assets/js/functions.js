@@ -137,7 +137,7 @@ function getPage(url, target){
   // target has to be a full selector.
   if($(target).html().length === 0){
     $.get(url, (d) => {
-      $(target).html("<div class='mb-2 card card-body'>" + d + "</div>");
+      $(target).html("<div class='card'><div class='card-body'>" + d + "</div><div class='card-footer text-right'><button type='button' class='btn-sm btn-secondary' data-toggle='collapse' data-target='" + target + "'>Close</button></div></div>");
       addTheGoodies(target);
     });
   }

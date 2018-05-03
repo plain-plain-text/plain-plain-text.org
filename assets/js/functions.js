@@ -52,7 +52,7 @@ function addModules(){
   console.log(module);
   const token = generateToken();
   const target = "module-" + token;
-  let newHtml = "<p><button class='btn btn-secondary' type='button' data-toggle='collapse' data-target='#" + target;
+  let newHtml = "<p><button class='btn btn-success' type='button' data-toggle='collapse' data-target='#" + target;
   newHtml = newHtml + "' aria-expanded='false' aria-controls='#" + target + "'>";
   newHtml = newHtml + $( this ).html() + "</button></p>";
   newHtml = newHtml + "<div class='collapse' id='" + target + "'></div>";

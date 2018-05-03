@@ -4,7 +4,7 @@ author: muziejus
 whatis: markdown
 ---
 
-Markdown is a lightweight syntax for writing human-readable texts that still
+**Markdown** is a lightweight syntax for writing human-readable texts that still
 can be formatted into web pages, letters, essays, or even books—paper and
 electronic.
 

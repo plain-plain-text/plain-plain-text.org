@@ -8,4 +8,4 @@ whatis: ruby
 category: blogging-platform
 ---
 
-Jekyll is a blogging platform.
+**Jekyll** is a blogging platform.

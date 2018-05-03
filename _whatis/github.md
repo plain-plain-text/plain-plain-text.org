@@ -8,4 +8,4 @@ whatis: git atom
 category: website
 ---
 
-Github is a website.
+**Github** is a website.

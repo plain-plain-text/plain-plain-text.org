@@ -4,7 +4,7 @@ author: muziejus
 whatis: tree-view
 ---
 
-Tree View shows the file structure of a [repository](/whatis/repository) in
+**Tree View** shows the file structure of a [repository](/whatis/repository) in
 [Atom](/whatis/atom). The top level should have an icon of a book. That means
 you’re working with a repository instead of “just” a regular folder.
 

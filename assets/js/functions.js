@@ -7,7 +7,7 @@ function addTheGoodies(target){
 
 function addWhatIses(){
   const token = generateToken();
-  $( this ).append("<div id='whatIs-box-" + token + "'></div>");
+  $( this ).after("<div id='whatIs-box-" + token + "'></div>");
   const whatIses = $( this ).children("a").map(function(){
     if($( this ).attr("href").match(/^\/whatis\//)){
       const href = $( this ).attr("href");
@@ -37,30 +37,31 @@ function addWhatIses(){
 }
 
 function formatWhatIs(whatIses, token){
-  // let pbox = "<p id='whatIs-buttons-" + token + "'>";
-  // let docbox = "</p><div class='row' id='whatIs-documents-" + token + "'>";
   let docbox = "<div class='row' id='whatIs-documents-" + token + "'>";
   whatIses.forEach((i) => {
     const tag = i.href.replace(/^\/whatis\//, "");
     const target = "whatIs-doc-" + tag + "-" + token;
-    // let pstring = "<button class='btn btn-primary' type='button' data-toggle='collapse' data-target='#" + target;
-    // pstring = pstring + "' aria-expanded='false' aria-controls='#" + target + "'>";
-    // pbox = pbox + pstring + i.text + "?</button> ";
     let docstring = "<div class='col-12'><div class='collapse multi-collapse' id='" + target + "'></div></div>";
     docbox = docbox + docstring;
   });
-  // return pbox + docbox + "</div>";
   return docbox + "</div>";
 }
 
 function addModules(){
   const module = $( this ).attr("module");
+  console.log(module);
   const token = generateToken();
-  const target = "details-" + token;
-  let details = "<details class='mb-3' ontoggle='getPage(\"/modules/" + module + "\", \"#" + target + "\");'>"
-  details = details + "<summary>" + $( this ).html() + "</summary>";
-  details = details + "<div class='pt-2' id='" + target + "'></div></details>";
-  $(this).replaceWith($(details));
+  const target = "module-" + token;
+  let newHtml = "<p><button class='btn btn-secondary' type='button' data-toggle='collapse' data-target='#" + target;
+  newHtml = newHtml + "' aria-expanded='false' aria-controls='#" + target + "'>";
+  newHtml = newHtml + $( this ).html() + "</button></p>";
+  newHtml = newHtml + "<div class='collapse' id='" + target + "'></div>";
+  $( this ).replaceWith($(newHtml));
+  // listen for the new div.
+  $("#" + target).on("show.bs.collapse", () => {
+    console.log("I'm being shown");
+    getPage("/modules/" + module, "#" + target);
+  });
 }
 
 function addTheMacWinTogglers(target){
@@ -137,7 +138,7 @@ function getPage(url, target){
   // target has to be a full selector.
   if($(target).html().length === 0){
     $.get(url, (d) => {
-      $(target).html("<div class='card'><div class='card-body'>" + d + "</div><div class='card-footer text-right'><button type='button' class='btn-sm btn-secondary' data-toggle='collapse' data-target='" + target + "'>Close</button></div></div>");
+      $(target).html("<div class='card mb-3'><div class='card-body'>" + d + "</div><div class='card-footer text-right'><button type='button' class='btn-sm btn-secondary' data-toggle='collapse' data-target='" + target + "'>Close</button></div></div>");
       addTheGoodies(target);
     });
   }

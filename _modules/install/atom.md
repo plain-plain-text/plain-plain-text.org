@@ -34,9 +34,12 @@ version:
 
 Now that Atom is installed, you should immediately you see two panes beside
 one another. One pane has three tabs, “untitled,” “Telemetry Consent,” and
-“Welcome.” The other pane features the Welcome Guide. Panes hold tabs, and you
-can have many tabs as well as many panes, and panes can even be stacked
-vertically, not just horizontally.
+“Welcome.” The other pane features the Welcome Guide. 
+
+Panes hold tabs, and you can have many tabs as well as many panes, and panes
+can even be stacked vertically, not just horizontally.
+
+The following steps finish up your installation.
 
 1. Uncheck the “Show Welcome Guide when opening Atom”
 
@@ -46,7 +49,7 @@ vertically, not just horizontally.
    up to you. Choosing will close that tab, leaving you with “untitled,” a
    blank text document. 
 
-1. Enable autosave. Atom ships with autosave disabled by default. Enable it
+1. Finally, enable autosave. Atom ships with autosave disabled by default. Enable it
    right away, if you like. First, open the [Command
    Palette](/whatis/command-palette).
 
@@ -62,7 +65,8 @@ vertically, not just horizontally.
 
 1. Scroll down to “Settings” and check the box beside “Enabled.”
 
-Atom is now installed and autosave is enabled. Congrats. The next step is to
+Once this is all done, Atom is good to go. But to truly leverage it, the next
+step should be to:
 
 {:module="install/git"}
 #### Install Git

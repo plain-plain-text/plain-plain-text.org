@@ -18,6 +18,7 @@ function addWhatIses(){
         .attr("role", "button")
         .attr("aria-expanded", "false")
         .attr("aria-controls", target)
+        .append("<sup><i class='fas fa-question-circle'></i></sup>");
       return { href: href,
         text: $( this ).html()
       };
@@ -36,18 +37,20 @@ function addWhatIses(){
 }
 
 function formatWhatIs(whatIses, token){
-  let pbox = "<p id='whatIs-buttons-" + token + "'>";
-  let docbox = "</p><div class='row' id='whatIs-documents-" + token + "'>";
+  // let pbox = "<p id='whatIs-buttons-" + token + "'>";
+  // let docbox = "</p><div class='row' id='whatIs-documents-" + token + "'>";
+  let docbox = "<div class='row' id='whatIs-documents-" + token + "'>";
   whatIses.forEach((i) => {
     const tag = i.href.replace(/^\/whatis\//, "");
     const target = "whatIs-doc-" + tag + "-" + token;
-    let pstring = "<button class='btn btn-primary' type='button' data-toggle='collapse' data-target='#" + target;
-    pstring = pstring + "' aria-expanded='false' aria-controls='#" + target + "'>";
-    pbox = pbox + pstring + i.text + "?</button> ";
+    // let pstring = "<button class='btn btn-primary' type='button' data-toggle='collapse' data-target='#" + target;
+    // pstring = pstring + "' aria-expanded='false' aria-controls='#" + target + "'>";
+    // pbox = pbox + pstring + i.text + "?</button> ";
     let docstring = "<div class='col-12'><div class='collapse multi-collapse' id='" + target + "'></div></div>";
     docbox = docbox + docstring;
   });
-  return pbox + docbox + "</div>";
+  // return pbox + docbox + "</div>";
+  return docbox + "</div>";
 }
 
 function addModules(){

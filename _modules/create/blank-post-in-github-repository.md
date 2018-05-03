@@ -3,7 +3,7 @@ title: Create a Blank Post in your GitHub Repository
 author: muziejus
 ---
 
-Because every post in Jekyll is its own, solitary Markdown file, creating a
+Because every post in Jekyll is its own, solitary, creating a
 new one is the same as creating a blank document in a GitHub repository.
 
 {:module="create/new-file-in-github-repository"}

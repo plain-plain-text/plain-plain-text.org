@@ -57,7 +57,7 @@ function addModules(){
   const module = $( this ).attr("module");
   const token = generateToken();
   const target = "details-" + token;
-  let details = "<details ontoggle='getPage(\"/modules/" + module + "\", \"#" + target + "\");'>"
+  let details = "<details class='mb-3' ontoggle='getPage(\"/modules/" + module + "\", \"#" + target + "\");'>"
   details = details + "<summary>" + $( this ).html() + "</summary>";
   details = details + "<div class='pt-2' id='" + target + "'></div></details>";
   $(this).replaceWith($(details));

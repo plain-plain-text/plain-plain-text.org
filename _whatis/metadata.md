@@ -20,4 +20,4 @@ it or describing it, the content.
 
 In [Jekyll](/whatis/jekyll), metadata is called “[front
 matter](https://jekyllrb.com/docs/frontmatter/). In both Jekyll and
-[Pandoc](/whatis/pandoc), metadata is written in [YAML].
+[Pandoc](/whatis/pandoc), metadata is written in [YAML](/whatis/yaml).

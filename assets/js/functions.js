@@ -1,5 +1,6 @@
 function addTheGoodies(target){
   addTheMacWinTogglers(target);
+  addExternalLinks(target);
   [{tag: "p", f: addWhatIses}, {tag: "h4", f: addModules}].forEach((i) => {
     $(target).find(i.tag).each(i.f);
   });
@@ -146,4 +147,10 @@ function getPage(url, target){
 
 function generateToken(){
   return Math.floor(Math.random() * 10000000000000).toString();
+}
+
+function addExternalLinks(selector){
+  const externalLink = $.parseHTML("<span>&nbsp;<i style='vertical-align: baseline; font-size: 60%;' class='fa fa-small fa-external-link-alt'></i></span>");
+  $(selector).find("a[href^='http']:not(a:has(img))").append(externalLink);
+  $(selector).find("a[href^='http']").attr("target", "_blank");
 }

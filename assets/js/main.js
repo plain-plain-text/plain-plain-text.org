@@ -1,8 +1,6 @@
 // Add icon for external links & flesh out ToC
 $(document).ready(function() {
-  let externalLink = $.parseHTML("<span>&nbsp;<i style='vertical-align: baseline; font-size: 60%;' class='fa fa-small fa-external-link-alt'></i></span>");
-  $("a[href^='http']:not(a:has(img))").append(externalLink);
-  $("a[href^='http']").attr("target", "_blank");
+  addExternalLinks("p");
   
 // Bump down content
 if($(".fixed-top").length){

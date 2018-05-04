@@ -8,7 +8,8 @@ whatis: markdown
 can be formatted into web pages, letters, essays, or even books—paper and
 electronic.
 
-The internet is flooded with Markdown cheatsheets, and [here is one by Adam
+The internet is flooded with Markdown cheatsheets. We [have
+one](/markdown-cheatsheet), and [here is another by Adam
 Pritchard](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
 Markdown files typically end in `.md`, and in Atom, you can preview a Markdown

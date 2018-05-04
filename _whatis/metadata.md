@@ -3,7 +3,7 @@ title: What Is Metadata?
 author: muziejus
 ---
 
-Metadata is “[data that provides information about other
+**Metadata** is “[data that provides information about other
 data](https://en.wikipedia.org/wiki/Metadata).” In the context of plain text,
 metadata is where we attach information to content that is not content per se.
 

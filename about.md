@@ -48,7 +48,7 @@ Creation remains always central, then, to the pedagogical process on this site.
 
 Lots of people have tackled this question, and we possibly don’t have much to
 add. Kieran Healy, for example, wrote “[The Plain Person’s Guide to Plain Text
-Scoial Science](https://kieranhealy.org/publications/plain-person-text/),” and
+Social Science](https://kieranhealy.org/publications/plain-person-text/),” and
 Healy has been a useful starting point for humanists interested in plain
 text. Healy argues that given the clutter of scholarly work, an “engineering
 model” relying on plain text is useful. That is, the various components that
@@ -89,7 +89,8 @@ in some way that makes you want to throw your computer away and return to
 longhand, well, I (or, really, back to “we”) are here to tell you there’s a
 better way. 
 
-Because more than anything, plain text rewards its users with _control_. They
+Because more than anything, plain text rewards its users with _control_, as
+Healy is quick to point out. Users
 can take as much or as little control over the plain text as they like, but
 it’s responsive to it all. It doesn’t patronize. It presents itself as it is
 and challenges the user to be creative with it. And that creativity comes with

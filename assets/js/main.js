@@ -1,6 +1,5 @@
 // Add icon for external links & flesh out ToC
 $(document).ready(function() {
-  addExternalLinks("p");
   
 // Bump down content
 if($(".fixed-top").length){
@@ -22,6 +21,6 @@ if($(".fixed-top").length){
 
 $(document).ready(() => {
 // Add the whatis and tutorials.
-  addTheGoodies("article");
+  addTheGoodies("article"); // this also adds external link icons.
   $("#master-os").on("click", toggleOS);
 });

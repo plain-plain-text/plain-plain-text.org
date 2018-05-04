@@ -59,8 +59,9 @@ Plain text helps with organization, with keeping a record, with
 reproducing work through minimizing error, and, finally, by automating
 repetitive tasks.
 
-Dennis Tenen and Grant Wythoff, on the other hand, writing in “Sustainable
-Authorship in Plain Text using Pandoc and Markdown,” start giving away the
+Dennis Tenen and Grant Wythoff, on the other hand, writing in “[Sustainable
+Authorship in Plain Text using Pandoc and
+Markdown](https://programminghistorian.org/lessons/sustainable-authorship-in-plain-text-using-pandoc-and-markdown),” start giving away the
 reasons in the title. They specify five principles that guide them, which do
 differ from Healy: sustainability, human-readability, separation
 of form and content, support for academic apparatus (footnotes), and platform

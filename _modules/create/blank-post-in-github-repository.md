@@ -17,4 +17,6 @@ Similarly, the filename for posts is typically something like
 the date (year first, then month, then day), and ends with `.md`.
 
 The date signals the posting date for the post, and the `.md` signals that you
-are writing a [Markdown](/whatis/markdown) post.
+are writing a [Markdown](/whatis/markdown) post. The Jekyll documentation
+[explains the file naming logic](https://jekyllrb.com/docs/posts/) in more
+detail.

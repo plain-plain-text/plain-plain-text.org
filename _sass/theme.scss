@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+$monofont: "Source Code Pro", "Monaco", monospaced;
+
 @import "syntax";
+
 
 body {
   font-family: "Lato", "Helvetica", sans-serif;

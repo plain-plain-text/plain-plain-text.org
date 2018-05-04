@@ -20,9 +20,11 @@ For **bold**, I use **2** asterisks.
 
 creates: 
 
+<div class="card card-body pb-0 mb-3">
 If I want to write in _italics_, I surround it by underscores.
 
 For **bold**, I use **2** asterisks.
+</div>
 
 ## Links
 
@@ -37,7 +39,9 @@ Writing some text in honor of [NYU](http://nyu.edu).
 
 creates:
 
+<div class="card card-body pb-0 mb-3">
 Writing some text in honor of [NYU](http://nyu.edu).
+</div>
 
 As you can see, the “NYU” part makes up the _text_ of the link, in “[]”
 brackets, and the parentheses is where you put the url.
@@ -52,7 +56,9 @@ The syntax is identical, except you add an exclamation point:
 
 creates:
 
+<div class="card card-body pb-0 mb-3">
 ![Bobst Library](https://i.imgur.com/o2jgwv2.png)
+</div>
 
 Here, “Bobst Library” appears as text to describe the image for people who
 have impaired vision. Note that the image has to have a URL. I recommend
@@ -72,7 +78,9 @@ This is some text I am writing about a footnote[^footnote-about-footnotes]
 
 creates:
 
+<div class="card card-body pb-0 mb-3">
 This is some text I am writing about a footnote[^footnote-about-footnotes]
+</div>
 
 [^footnote-about-footnotes]: This is the text of the footnote.
 
@@ -92,11 +100,14 @@ have spaces, and has to begin with a “^” caret.
 
 creates:
 
+<div class="card card-body pb-0 mb-3">
 # This is a header
 
 ## This is a subheader
 
+{:.mb-3}
 ###### This is six levels down
+</div>
 
 ## Blockquotes
 
@@ -107,9 +118,12 @@ multiple paragraph blockquotes, keep adding “>” symbols.
 
 creates:
 
+<div class="card card-body pb-0 mb-3">
 {:.blockquote}
 > A blockquote begins with a “>” symbol and continues until a blank line. For
 multiple paragraph blockquotes, keep adding “>” symbols.
+
+</div>
 
 ## Lists
 
@@ -126,10 +140,12 @@ list.
 
 creates:
 
+<div class="card card-body pb-0 mb-3">
 * This
 * is
 * an
 * unordered list
+</div>
 
 {% highlight markdown linenos %}
 1. This
@@ -142,12 +158,14 @@ creates:
 
 creates:
 
+<div class="card card-body pb-0 mb-3">
 1. This
 4. is
 5. an ordered
 1. list. Notice
 100. that the numbers
 2. don’t matter
+</div>
 
 There’s a whole lot more that Markdown can do, but this should cover most of
 your bases for starters.

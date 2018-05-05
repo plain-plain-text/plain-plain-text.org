@@ -13,6 +13,16 @@
       <!-- <li class="nav-item"> -->
       <!--   <a href="#" class="nav-link">What Is?</a> -->
       <!-- </li> -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="createDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Create…
+        </a>
+        <div class="dropdown-menu" aria-labelledby="createDropdown">
+          {% for tutorial in site.tutorials %}
+          <a class="dropdown-item" href="{{ tutorial.url }}">{{ tutorial.create-button }}</a>
+          {% endfor %}
+        </div>
+      </li>
       <li class="nav-item">
         <a href="/installers" class="nav-link">Installers</a>
       </li>

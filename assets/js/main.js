@@ -22,5 +22,6 @@ if($(".fixed-top").length){
 $(document).ready(() => {
 // Add the whatis and tutorials.
   addTheGoodies("article"); // this also adds external link icons.
+  addExternalLinks("footer");
   $("#master-os").on("click", toggleOS);
 });

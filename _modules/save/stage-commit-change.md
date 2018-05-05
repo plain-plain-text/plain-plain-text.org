@@ -26,7 +26,7 @@ Files with a green `+` are new files. Files with a yellow `•` are modified
 files, and files with a red `-` are deleted files. Note that, for Git, a
 renamed file is two files: one deleted and a new one created.
 
-To Stage a file, either click on the “Stage All” button or click on the file
+To stage a file, either click on the “Stage All” button or click on the file
 and press <kbd>return</kbd>. Reverse the process to unstage.
 
 When a file is highlighted in the Git Tab, the Unstaged Changes tab opens,
@@ -38,7 +38,7 @@ worries.
 Once you’ve made your changes and your files are staged, you can commit them.
 When to commit is up to you. Too much committing can be overwhelming, and too
 little can be useless. The general rule of thumb is to commit whenever an
-important change is made. What counts as important is up to you.
+important change is made. What counts as important is, again, up to you.
 
 With the files staged, type in a useful commit message into the “Commit
 message” field, like `Added post on burritos`. The “Commit to

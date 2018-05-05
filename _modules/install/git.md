@@ -51,7 +51,14 @@ Before installing Git, you should
 </div>
 <div class="mac">
 
-Mac version TK.
+In your [terminal](/whatis/terminal), type
+
+{% highlight shell linenos %}
+git --version
+{% endhighlight %}
+
+and hit return. Your Mac will prompt you to install git via the XCode command
+line tools.
 
 </div>
 </div>

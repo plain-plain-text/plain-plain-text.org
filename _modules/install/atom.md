@@ -28,7 +28,8 @@ version:
 </div>
 <div class="mac">
 
-  Mac directions TK.
+{:.mt-3.alert.alert-danger}
+Mac installation directions to come.
 
 </div>
 

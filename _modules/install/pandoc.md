@@ -25,7 +25,7 @@ Next, from your [terminal](/whatis/terminal), type
 brew install pandoc
 {% endhighlight %}
 
-and hit return.
+and hit <kbd>return</kbd>.
 
 </div>
 </div>

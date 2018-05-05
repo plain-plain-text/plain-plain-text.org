@@ -16,7 +16,7 @@ Homebrew is a Mac-only application.
 
 1. First, open your [terminal](/whatis/terminal)
 
-1. Paste the code below into your terminal and hit return.
+1. Paste the code below into your terminal and hit <kbd>return</kbd>.
 
   `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
   

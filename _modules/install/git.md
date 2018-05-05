@@ -57,7 +57,7 @@ In your [terminal](/whatis/terminal), type
 git --version
 {% endhighlight %}
 
-and hit return. Your Mac will prompt you to install git via the XCode command
+and hit <kbd>return</kbd>. Your Mac will prompt you to install git via the XCode command
 line tools.
 
 </div>

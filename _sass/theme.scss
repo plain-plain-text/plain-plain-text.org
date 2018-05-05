@@ -12,6 +12,10 @@ body {
   // font-size changed in non-phone.
 }
 
+.card-body {
+  padding-bottom: .25rem;
+}
+
 summary {
   font-size: 1.5rem;
 }

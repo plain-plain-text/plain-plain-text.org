@@ -4,6 +4,7 @@ author: muziejus
 whatis: atom github command-palette
 version:
 - win: 1.26.1
+- mac: 1.26.1
 ---
 
 <div class="pc">
@@ -14,7 +15,7 @@ version:
 1. Click on “Save File” to save the file. It’s a big file, which means the
    download may take some time. The file is saved to your “Downloads” folder.
 
-1. Double-click on the downloaded file, called “AtomSetup-x64.”
+1. Double-click on the downloaded file, called `AtomSetup-x64`.
 
 1. Click “Run” when it asks for permission.
 
@@ -28,8 +29,16 @@ version:
 </div>
 <div class="mac">
 
-{:.mt-3.alert.alert-danger}
-Mac installation directions to come.
+1. Point your browser to [atom.io](https://atom.io) and click “Download.” 
+
+1. Save the subsequent `atom-mac.zip` file to a place you will find it.
+
+1. Double-click on `atom-mac.zip`, which creates an app called `Atom.app`.
+
+1. Drag that `Atom.app` to your `Applications` folder (which you can open by typing
+   <kbd><kbd>cmd</kbd> <kbd>shift</kbd> <kbd>a</kbd></kbd>).
+
+1. Double-click on `Atom.app` to launch Atom.
 
 </div>
 
@@ -55,7 +64,7 @@ The following steps finish up your installation.
    Palette](/whatis/command-palette).
 
 1. Type in “Settings” and choose “Settings View: Open” from the list by
-   clicking onit.
+   clicking on it.
 
 1. Now click on “Packages” beside an icon of a shipping box.
 
@@ -66,8 +75,20 @@ The following steps finish up your installation.
 
 1. Scroll down to “Settings” and check the box beside “Enabled.”
 
-Once this is all done, Atom is good to go. But to truly leverage it, the next
-step should be to:
+Once this is all done, Atom is good to go. The *Atom Flight Manual* begins
+with an [introduction to
+Atom
+basics](https://flight-manual.atom.io/getting-started/sections/atom-basics/)
+which can introduce the application. 
+
+It would be useful now to add some additional
+[packages](/whatis/atom-package) for Atom:
+
+{:module="add/atom-packages"}
+#### Add Additional Atom Packages
+
+Finally, a key benefit of Atom is its [Git](/whatis/git) integration, so now
+is a good time to install it, too:
 
 {:module="install/git"}
 #### Install Git

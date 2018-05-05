@@ -48,14 +48,17 @@ defaults:
     type: tutorials
   values:
     layout: tutorial
+    author: muziejus
 - scope:
     path: ""
     type: modules
   values:
     layout: module
+    author: muziejus
 - scope:
     path: ""
     type: whatis
   values:
     layout: whatis
+    author: muziejus
 

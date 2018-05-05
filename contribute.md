@@ -27,9 +27,18 @@ particular interest to contributors:
 * `_whatis` holds the description files that open the cards that define key
   terms.
 
+Filenames should be lowercase and with hyphens instead of spaces. Definitions,
+tutorials, and modules should all be writeable using only
+[Markdown](/whatis/markdown).
+
 ## Style
 
-The site uses JavaScript to create the cards. 
+### Metadata
+
+Every page should have a `title:` defined and an `author:` defined. The
+author value should be the author’s [GitHub](/whatis/github) username. If the
+document is collaborative, then an `authors:` metadata array can be used,
+instead.
 
 ### Modules
 

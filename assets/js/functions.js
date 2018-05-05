@@ -8,33 +8,35 @@ function addTheGoodies(target){
 
 function addWhatIses(){
   const token = generateToken();
-  $( this ).after("<div id='whatIs-box-" + token + "'></div>");
-  const whatIses = $( this ).children("a").map(function(){
-    if($( this ).attr("href").match(/^\/whatis\//)){
-      const href = $( this ).attr("href");
-      const target = "#whatIs-doc-" + href.replace(/^\/whatis\//, "") + "-" + token;
-      $( this ).attr("href", "#")
-        .attr("data-toggle", "collapse")
-        .attr("data-target", target)
-        .attr("role", "button")
-        .attr("aria-expanded", "false")
-        .attr("aria-controls", target)
-        .append("<sup><i class='fas fa-question-circle'></i></sup>");
-      return { href: href,
-        text: $( this ).html()
-      };
-    }
-  }).get();
-  $("#whatIs-box-" + token).html(function(_, oldHtml){
-    return formatWhatIs(whatIses, token);
-  });
-  // now listen for clicks.
-  whatIses.forEach((i) => {
-    const target = "whatIs-doc-" + i.href.replace(/^\/whatis\//, "") + "-" + token;
-    $("#" + target).on("show.bs.collapse", () => {
-      getPage(i.href, "#" + target);
+  if($( this ).children("a").get().filter((i) => { return $(i).attr("href").match(/^\/whatis\//); }).length > 0){
+    $( this ).after("<div id='whatIs-box-" + token + "'></div>");
+    const whatIses = $( this ).children("a").map(function(){
+      if($( this ).attr("href").match(/^\/whatis\//)){
+        const href = $( this ).attr("href");
+        const target = "#whatIs-doc-" + href.replace(/^\/whatis\//, "") + "-" + token;
+        $( this ).attr("href", "#")
+          .attr("data-toggle", "collapse")
+          .attr("data-target", target)
+          .attr("role", "button")
+          .attr("aria-expanded", "false")
+          .attr("aria-controls", target)
+          .append("<sup><i class='fas fa-question-circle'></i></sup>");
+        return { href: href,
+          text: $( this ).html()
+        };
+      }
+    }).get();
+    $("#whatIs-box-" + token).html(function(_, oldHtml){
+      return formatWhatIs(whatIses, token);
     });
-  });
+    // now listen for clicks.
+    whatIses.forEach((i) => {
+      const target = "whatIs-doc-" + i.href.replace(/^\/whatis\//, "") + "-" + token;
+      $("#" + target).on("show.bs.collapse", () => {
+        getPage(i.href, "#" + target);
+      });
+    });
+  }
 }
 
 function formatWhatIs(whatIses, token){

@@ -59,21 +59,8 @@ The following steps finish up your installation.
    up to you. Choosing will close that tab, leaving you with “untitled,” a
    blank text document. 
 
-1. Finally, enable autosave. Atom ships with autosave disabled by default. Enable it
-   right away, if you like. First, open the [Command
-   Palette](/whatis/command-palette).
-
-1. Type in “Settings” and choose “Settings View: Open” from the list by
-   clicking on it.
-
-1. Now click on “Packages” beside an icon of a shipping box.
-
-1. In the “Filter packages by name” field, type in “autosave”
-
-1. An Autosave panel should appear under “Core Packages.” Click on the
-   “Settings” button.
-
-1. Scroll down to “Settings” and check the box beside “Enabled.”
+1. Finally, enable [autosave](/whatis/autosave), because Atom ships with
+   autosave **disabled** by default. 
 
 Once this is all done, Atom is good to go. The *Atom Flight Manual* begins
 with an [introduction to

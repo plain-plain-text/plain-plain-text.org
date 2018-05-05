@@ -2,7 +2,12 @@
 title: Add Additional Atom Packages
 ---
 
-We recommend adding the following additional [Atom
+First, we recommend enabling [autosave](/whatis/autosave)
+
+{:module="enable-/autosave-in-atom"}
+#### Enable Autosave in Atom
+
+Next, we recommend adding the following additional [Atom
 packages](/whatis/atom-package)
 
 1. [run-command](/whatis/run-command) lets you run [terminal](/whatis/terminal)

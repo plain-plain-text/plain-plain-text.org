@@ -52,7 +52,6 @@ function formatWhatIs(whatIses, token){
 
 function addModules(){
   const module = $( this ).attr("module");
-  console.log(module);
   const token = generateToken();
   const target = "module-" + token;
   let newHtml = "<p><button class='btn btn-success' type='button' data-toggle='collapse' data-target='#" + target;
@@ -62,7 +61,6 @@ function addModules(){
   $( this ).replaceWith($(newHtml));
   // listen for the new div.
   $("#" + target).on("show.bs.collapse", () => {
-    console.log("I'm being shown");
     getPage("/modules/" + module, "#" + target);
   });
 }

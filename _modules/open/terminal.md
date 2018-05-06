@@ -17,7 +17,7 @@ then the “Utilities” folder. Terminal.app will be inside. Or, open the
 “Utilities” folder directly by typing <kbd><kbd>cmd</kbd> <kbd>shift</kbd>
 <kbd>u</kbd></kbd>.
 
-There is a better terminal emulator for Macs, [iTerm](/whatis/iterm), but
+There is a better terminal emulator for Macs, [iTerm2](/whatis/iterm2), but
 Terminal.app should be sufficient for these tutorials.
 
 Introductions to the command line abound on the internet, and [here is a

@@ -1,7 +1,5 @@
 ---
-title: About
-permalink: /markdown-cheatsheet
-author: muziejus
+title: Markdown Cheatsheeet
 ---
 
 # Markdown Cheatsheet

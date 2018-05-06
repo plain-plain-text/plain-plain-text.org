@@ -42,6 +42,8 @@ collections:
     output: true
   whatis:
     output: true
+  cheatsheets:
+    output: true
 defaults:
 - scope:
     path: ""
@@ -60,5 +62,11 @@ defaults:
     type: whatis
   values:
     layout: whatis
+    author: muziejus
+- scope:
+    path: ""
+    type: cheatsheets
+  values:
+    layout: default
     author: muziejus
 

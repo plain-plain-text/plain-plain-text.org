@@ -16,7 +16,8 @@ request](https://help.github.com/articles/creating-a-pull-request/).
 
 If you look at [the repository for this
 site](https://github.com/plain-plain-text/plain-plain-text-www), you can see
-that it’s a [Jekyll](/whatis/jekyll) site, with three collections of
+that it’s a [Jekyll](/whatis/jekyll) site, with three
+[collections](https://jekyllrb.com/docs/collections/) of
 particular interest to contributors:
 
 * `_modules` holds all the individual modules. The first level of directories
@@ -39,6 +40,14 @@ Every page should have a `title:` defined and an `author:` defined. The
 author value should be the author’s [GitHub](/whatis/github) username. If the
 document is collaborative, then an `authors:` metadata array can be used,
 instead.
+
+For a description file (a “`whatis`”), it can leverage two more pieces of
+metadata: `official-site:` is the official website (minus the `http://`) for
+an object, like `atom.io`, and `wikipedia-title:` is the _Wikipedia_ article
+title for an object, like `Atom (text editor)`. These generate the blue
+buttons one sees on a description card.
+
+At this time, no other metadata is used.
 
 ### Modules
 

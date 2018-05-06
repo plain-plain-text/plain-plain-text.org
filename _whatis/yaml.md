@@ -1,5 +1,7 @@
 ---
 title: What Is YAML
+official-site: yaml.org
+wikipedia-title: YAML
 ---
 
 [**YAML**](yaml.org) is a “human friendly data serialization standard for all

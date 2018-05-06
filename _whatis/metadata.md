@@ -1,6 +1,7 @@
 ---
 title: What Is Metadata?
 author: muziejus
+wikipedia-title: Metadata
 ---
 
 **Metadata** is “[data that provides information about other

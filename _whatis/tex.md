@@ -2,6 +2,8 @@
 title: TeX
 author: muziejus
 whatis: 
+official-site: tug.org
+wikipedia-title: TeX
 ---
 
 [**TeX**](http://tug.org) (stylized as <span

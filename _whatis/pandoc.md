@@ -2,6 +2,8 @@
 title: Pandoc
 author: muziejus
 whatis: markdown html tex
+official-site: pandoc.org
+wikipedia-title: Pandoc
 ---
 
 [**Pandoc**](https://pandoc.org) is a universal document converter that is

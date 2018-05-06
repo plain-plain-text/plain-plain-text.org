@@ -2,6 +2,8 @@
 title: Markdown
 author: muziejus
 whatis: markdown
+official-site: daringfireball.net/projects/markdown
+wikipedia-title: Markdown
 ---
 
 **Markdown** is a lightweight syntax for writing human-readable texts that still

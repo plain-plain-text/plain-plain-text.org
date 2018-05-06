@@ -2,8 +2,8 @@
 title: GitHub
 tag: github
 author: muziejus
-website: github.com
-wikipedia: GitHub
+official-site: github.com
+wikipedia-title: GitHub
 whatis: git atom
 category: website
 ---

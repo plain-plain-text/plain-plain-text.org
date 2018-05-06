@@ -1,9 +1,11 @@
 # plain-plain-text-www
 
-Plain Plain Text is a website that introduces and advocates for the use of
-plain text in the humanities and social sciences. Plain text evangelists in
-these disciplines can be found all over the internet, where in various blog
-posts they describe, often is overwhelming detail, their various workflows.
+Plain Plain Text is a project dedicated to providing modular tutorials for
+humanists interested in using [plain
+text](http://en.wikipedia.org/wiki/Plain_text) in their scholarly
+communication. There are many benefits to moving to plain text, but we also
+know that it can be intimidating. Change typically is, and getting used to new
+software is famously tricky.
 
 Instead, we take a modular approach to our evangelism and pedagogy. If you
 already have a text editor installed, you can skip that section. If you
@@ -39,19 +41,9 @@ Similarly, we are committed to free and open software and we encourage
 inclusivity and accessibility in our pedagogy. Hence, all of the tutorials
 here use free software except for the operating system. Concretely, throughout
 these tutorials, you will be introduced to the ecosystem of Atom, Git, Pandoc,
-and TeX. These four tools will get you everywhere you need to go, whether
+and TeX. These four tools will get you most everywhere you need to go, whether
 that’s writing a cover letter or ensuring the quality of your dissertation’s
 bibliography.
-
-## How to Start
-
-Tutorials are split into two categories: “I want to learn” and “I want to
-create.” The former introduce software conceptually and describe various
-features of the software without a specific project in mind. They provide the
-foundational modules for the second set, which teach, step-by-step, through to
-a specific goal. Our hope is that you understand the steps well enough to be
-able to adjust the material for your own needs, or at least learn how to look
-for help.
 
 ## Who Are We?
 

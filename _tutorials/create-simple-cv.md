@@ -6,8 +6,8 @@ tags: publishing latex pdf html
 ---
 
 This tutorial makes use of the
-[simple-cv](http://github.com/muziejus/simple-cv) [GitHub](/whatis/github)
-package to generate a CV that can be served both as a webpage and emailed as a
+[simple-cv](http://github.com/muziejus/simple-cv) package at [GitHub](/whatis/github)
+to generate a CV that can be served both as a webpage and emailed as a
 [pdf](/whatis/pdf).
 
 It works by reading two [YAML](/whatis/yaml) files that feature configuration

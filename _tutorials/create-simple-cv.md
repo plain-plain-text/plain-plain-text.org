@@ -31,3 +31,12 @@ you now clone.
 
 Now you can edit the YAML files in the `data` folder to personalize the
 structure of the document.
+
+The documentation for the package explains what the various options in
+`data/format.yml` and `data/personal.yml`. Most notably, the `cv-sections:`
+key in `data/format.yml` gives the list of files the package expects in
+the `sections` folder. These should correspond to whatever is important in
+your field for your CV. Similarly, you can reorder them or
+[comment](/whatis/comment) out sections you don’t need right away.
+
+

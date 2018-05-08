@@ -1,14 +1,16 @@
+/* global addTheGoodies, addExternalLinks, toggleOS */
+
 // Add icon for external links & flesh out ToC
 $(document).ready(function() {
   
 // Bump down content
-if($(".fixed-top").length){
-  $("#main").css("margin-top",  $("#navbar").height() + $(".fixed-top").data("margin") + "px");
-}
+  if($(".fixed-top").length){
+    $("#main").css("margin-top",  $("#navbar").height() + $(".fixed-top").data("margin") + "px");
+  }
 
   // flesh out table of contents.
   $("#tocList").append(function(){
-    let contents =  ""
+    let contents =  "";
     $("article > h2").each(function(){
       contents += "<div class='nav-item'><a class='nav-link' href='#" + $( this ).attr("id") + "'>" + $( this ).text() + "</a></div>\n";
     });

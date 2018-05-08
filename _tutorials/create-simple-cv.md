@@ -3,6 +3,7 @@ title: Create a Simple CV
 create-button: A Simple CV
 author: muziejus
 tags: publishing latex pdf html 
+installers: atom pandoc tex
 ---
 
 This tutorial makes use of the

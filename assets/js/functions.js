@@ -26,7 +26,7 @@ function addWhatIses(){
         };
       }
     }).get();
-    $("#whatIs-box-" + token).html(function(_, oldHtml){
+    $("#whatIs-box-" + token).html(function(){
       return formatWhatIs(whatIses, token);
     });
     // now listen for clicks.
@@ -70,7 +70,7 @@ function addTheMacWinTogglers(target){
     let toggler = "<span class='computer-toggler'>";
     toggler = toggler + "<i class='apple-toggler fab fa-apple'></i> | <i class='win-toggler text-muted fab fa-windows'></i></span>&nbsp;";
     $( this ).html(function(_, old){
-      return toggler + old
+      return toggler + old;
     });
     const currOS = $("#master-os").data("os");
     if(currOS === "apple"){

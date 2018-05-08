@@ -6,8 +6,8 @@ author: muziejus
 <div class="pc">
 <div class="win">
 
-{:.mt-3.alert.alert-danger}
-Windows description to come.
+In Windows, the terminal is called the Command Prompt. Launch it by clicking
+on the Start button and searching for “Command Prompt.” 
 
 </div>
 <div class="mac">

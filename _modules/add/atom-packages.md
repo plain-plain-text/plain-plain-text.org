@@ -11,7 +11,7 @@ Next, we recommend adding the following additional [Atom
 packages](/whatis/atom-package)
 
 1. [run-command](/whatis/run-command) lets you run [terminal](/whatis/terminal)
-   commands from Atom.
+   commands from Atom. Does not work with Windows.
 
 1. [linter-markdown](/whatis/linter-markdown) checks your
    [Markdown](/whatis/markdown) syntax for errors.

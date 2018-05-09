@@ -13,7 +13,7 @@ notably, [Pandoc](/whatis/pandoc).
 
 Many terminal commands can be run with the [run-command](/whatis/run-command)
 package in [Atom](/whatis/atom), but the terminal itself is sometimes
-important.
+important, especially on Windows, where run-command does not work.
 
 
 {:module="open/terminal"}

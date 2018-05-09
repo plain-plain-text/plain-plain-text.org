@@ -58,6 +58,8 @@ Each section file *should* begin with a second level heading, like:
 
 ## Generating the Webpage and pdf
 
+<div class="pc">
+<div class="mac">
 Once you have a certain amount finished, using
 [run-command](/whatis/run-command), execute:
 
@@ -83,6 +85,10 @@ freely](https://bitbucket.org/georgd/eb-garamond/downloads/) and put the files
 in the `fonts` folder. Source Code Pro you can [download
 freely](https://github.com/adobe-fonts/source-code-pro/releases/tag/2.030R-ro%2F1.050R-it)
 as well, even though it’s not actually used in the default template.
+
+</div>
+<div class="win">
+</div>
 
 ## Put your Webpage and pdf Online
 

@@ -3,9 +3,8 @@ title: Create a New Repository on GitHub
 author: muziejus
 ---
 
-First, log into [GitHub](/whatis/github). Once logged in, there should be a
-large `+` icon next to your profile photo in the top-right of the GitHub page.
-Click on that and choose “New repository” from the dropdown menu.
+First, log into [GitHub](/whatis/github). Once logged in, point your browser
+to [github.com/new](https://github.com/new).
 
 Fill in the information as you see fit.
 

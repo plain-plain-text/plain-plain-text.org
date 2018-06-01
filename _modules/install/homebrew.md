@@ -18,7 +18,9 @@ Homebrew is a Mac-only application.
 
 1. Paste the code below into your terminal and hit <kbd>return</kbd>.
 
-  `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+{% highlight shell linenos %}
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+{% endhighlight %}
   
 
 </div>

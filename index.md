@@ -1,5 +1,5 @@
 ---
-title: Plain Plain Text.
+title: Welcome.
 layout: default
 ---
 

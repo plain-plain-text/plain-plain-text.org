@@ -1,5 +1,6 @@
 ---
 title: Plain Plain Text.
+layout: default
 ---
 
 

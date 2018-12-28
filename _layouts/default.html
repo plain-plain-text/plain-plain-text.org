@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html class="w-100 h-100">
   <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body>
-    {{ content }}
+  <body class="w-100 h-100">
+    <div class="container d-flex h-100">
+      <div class="align-self-center">
+        {{ content }}
+      </div>
+    </div>
     {% include scripts.html %}
   </body>
 </html>
